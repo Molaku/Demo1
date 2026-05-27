@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mack Warranty - סוכן מורשה רשמי | הגנה מושלמת לציוד צילום</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            light: '#2563eb',
+                            dark: '#3b82f6',
+                            accent: '#10b981'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Rubik', sans-serif;
+        }
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-50 transition-colors duration-300">
+
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-800 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="text-xl font-bold tracking-tight text-blue-600 dark:text-blue-400">Mack Warranty</span>
+                <span class="text-sm bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300 px-2 py-0.5 rounded-full font-medium">סוכן מורשה</span>
+            </div>
+            
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600 dark:text-slate-300">
+                <a href="#about" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">אודות Mack</a>
+                <a href="#benefits" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">יתרונות</a>
+                <a href="#how-it-works" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">איך זה עובד</a>
+                <a href="#faq" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">שאלות ותשובות</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <button id="themeToggle" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:ring-2 hover:ring-slate-300 dark:hover:ring-slate-700 transition-all" aria-label="Toggle theme">
+                    <svg id="sunIcon" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M12 5a7 7 0 100 14 7 7 0 000-14z"/></svg>
+                    <svg id="moonIcon" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+                </button>
+                <a href="#calculator" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium shadow-sm transition-colors hidden sm:inline-block">להפקת תעודה</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative overflow-hidden py-20 lg:py-32 border-b border-slate-200 dark:border-slate-900">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent dark:from-blue-950/20 pointer-events-none"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800 dark:bg-emerald-950/50 dark:text-emerald-400 mb-6">
+                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6.267 3.455a.75.75 0 00-.708.522L3.511 12.24l-.01.042a3.25 3.25 0 003.111 4.018h6.776a3.25 3.25 0 003.111-4.018l-.01-.042-2.048-8.263a.75.75 0 00-.707-.522H6.267zm2.233 6.795a1 1 0 112 0 1 1 0 01-2 0z" clip-rule="evenodd"/></svg>
+                סוכן מורשה רשמי - Authorized Agent (12+ שנות ניסיון)
+            </span>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 dark:text-white leading-tight mb-6">
+                הגנה מוחלטת לציוד הצילום שלך – תעודות אחריות בינלאומיות של <span class="text-blue-600 dark:text-blue-400">Mack Warranty</span> במחירים המשתלמים ביותר
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                אל תסכן את הציוד היקר שלך. כסוכן מורשה רשמי עם מעל 12 שנות ניסיון, אני מציע לך את הכיסוי המקיף ביותר נגד תקלות ונזקים, עם תוקף בינלאומי מלא ומעבדת שירות מוסמכת.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#calculator" class="w-full sm:w-auto text-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-medium shadow-lg shadow-blue-600/10 dark:shadow-none transition-all hover:-translate-y-0.5 text-lg">
+                    לחשבון עלות ורכישה
+                </a>
+                <a href="#benefits" class="w-full sm:w-auto text-center bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 px-8 py-4 rounded-xl font-medium border border-slate-200 dark:border-slate-800 transition-all text-lg">
+                    למה דווקא Mack?
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white dark:bg-slate-900 transition-colors">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7">
+                    <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-6">
+                        על חברת Mack Worldwide Warranty
+                    </h2>
+                    <div class="space-y-4 text-slate-600 dark:text-slate-400 leading-relaxed">
+                        <p>
+                            חברת Mack Worldwide Warranty נוסדה בשנת 1938 בארצות הברית ומאחוריה כמעט 90 שנה של ניסיון מקצועי ומוניטין חסר פשרות בשוק השירות העולמי. מטה החברה הרשמי ממוקם ב-Springfield, New Jersey, ארה"ב, ומשם היא מנהלת את רשת המעבדות והשירות שלה ברחבי הגלובוס.
+                        </p>
+                        <p>
+                            במהלך העשורים האחרונים הפכה Mack לשם דבר ולסטנדרט הזהב בקרב צלמים מקצועיים, במאים, יוצרי תוכן וחובבי טכנולוגיה בכל העולם. החברה מתמחה בהענקת תעודות הגנה וכיסוי מורחב המעניקות שקט נפשי אמיתי ומבטיחות שהציוד היקר שלכם יזכה לטיפול הטוב ביותר, תוך שימוש בחלקי חילוף מקוריים בלבד ועל ידי טכנאים מוסמכים.
+                        </p>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 bg-slate-50 dark:bg-slate-950 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 flex flex-col justify-center space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="p-3 bg-blue-100 dark:bg-blue-950 text-blue-600 dark:text-blue-400 rounded-xl">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 dark:text-white">מטה החברה</h4>
+                            <p class="text-sm text-slate-500 dark:text-slate-400">Springfield, New Jersey, USA</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="p-3 bg-blue-100 dark:bg-blue-950 text-blue-600 dark:text-blue-400 rounded-xl">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 dark:text-white">שנת ייסוד</h4>
+                            <p class="text-sm text-slate-500 dark:text-slate-400">נוסדה ב-1938 (קרוב ל-90 שנות פעילות)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculator" class="py-20 bg-slate-50 dark:bg-slate-950 transition-colors">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-4">מחשבון עלות אינטראקטיבי והזמנת תעודה</h2>
+                <p class="text-slate-600 dark:text-slate-400">הזן את שווי הציוד בשקלים, בחר את מסלול ההגנה וקבל הצעת מחיר שקופה בזמן אמת המבוססת על שערי החליפין העדכניים ביותר.</p>
+            </div>
+
+            <form id="leadForm" action="https://formspree.io/f/YOUR_ENDPOINT_HERE" method="POST" class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl shadow-xl p-6 sm:p-10 space-y-8 transition-colors">
+                
+                <input type="hidden" name="Gear_Value_ILS" id="hiddenGearILS">
+                <input type="hidden" name="Gear_Value_USD" id="hiddenGearUSD">
+                <input type="hidden" name="Warranty_Type" id="hiddenType">
+                <input type="hidden" name="Duration" id="hiddenDuration">
+                <input type="hidden" name="Certificate_ID" id="hiddenCertID">
+                <input type="hidden" name="Final_Price_ILS" id="hiddenFinalPriceILS">
+                <input type="hidden" name="Coupon_Applied" id="hiddenCouponApplied" value="No">
+
+                <div>
+                    <label class="block text-base font-bold text-slate-800 dark:text-slate-200 mb-2">שלב 1: עלות הציוד בשקלים (נטו - ללא מע"מ ומיסים)</label>
+                    <div class="relative rounded-xl shadow-sm">
+                        <div class="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none text-slate-400 font-bold text-lg">
+                            ₪
+                        </div>
+                        <input type="number" id="gearValueInput" value="3650" min="1" required class="block w-full pr-10 pl-4 py-3.5 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:text-white font-medium text-lg transition-all">
+                    </div>
+                    <p id="exchangeRateText" class="mt-2 text-xs text-slate-500 dark:text-slate-400 flex items-center gap-1">
+                        טוען שער חליפין עדכני...
+                    </p>
+                </div>
+
+                <div>
+                    <label class="block text-base font-bold text-slate-800 dark:text-slate-200 mb-3">שלב 2: סוג תעודת אחריות</label>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div id="typeStandard" class="cursor-pointer border-2 border-blue-600 bg-blue-50/30 dark:bg-blue-950/20 rounded-2xl p-5 transition-all select-none relative">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="font-bold text-lg text-slate-900 dark:text-white">STANDARD</h3>
+                                <div class="dot-outer w-5 h-5 rounded-full border-2 border-blue-600 flex items-center justify-center">
+                                    <div class="dot-inner w-2.5 h-2.5 bg-blue-600 rounded-full"></div>
+                                </div>
+                            </div>
+                            <p class="text-sm text-slate-600 dark:text-slate-400">כיסוי מלא ומקיף כנגד תקלות מכניות, תקלות רכיבים פנימיים ובלאי טבעי של הציוד בתנאי שימוש רגילים.</p>
+                        </div>
+                        <div id="typeDiamond" class="cursor-pointer border-2 border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 rounded-2xl p-5 transition-all select-none relative hover:border-slate-300 dark:hover:border-slate-700">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="font-bold text-lg text-slate-900 dark:text-white">DIAMOND (נזק פיזי)</h3>
+                                <div class="dot-outer w-5 h-5 rounded-full border-2 border-slate-300 dark:border-slate-700 flex items-center justify-center">
+                                    <div class="dot-inner w-2.5 h-2.5 bg-transparent rounded-full"></div>
+                                </div>
+                            </div>
+                            <p class="text-sm text-slate-600 dark:text-slate-400">הכיסוי היוקרתי ביותר של Mack! כולל הגנה מלאה גם מפני נזקים תאונתיים (Accidental Damage), נפילות, שברים ומכות.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-base font-bold text-slate-800 dark:text-slate-200 mb-3">שלב 3: משך זמן האחריות</label>
+                    <div id="durationContainer" class="flex items-center gap-3">
+                        <button type="button" id="btn3Y" class="px-6 py-2.5 rounded-full text-sm font-medium border-2 border-blue-600 bg-blue-600 text-white transition-all select-none">
+                            3 שנים
+                        </button>
+                        <button type="button" id="btn5Y" class="px-6 py-2.5 rounded-full text-sm font-medium border-2 border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:border-slate-300 dark:hover:border-slate-700 transition-all select-none">
+                            5 שנים
+                        </button>
+                    </div>
+                </div>
+
+                <div class="border-t border-b border-slate-100 dark:border-slate-800 py-6">
+                    <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">יש לך קוד קופון?</label>
+                    <div class="flex gap-3 max-w-md">
+                        <input type="text" id="couponInput" placeholder="הזן קוד קופון להנחה" class="block w-full px-4 py-2 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl text-sm dark:text-white uppercase transition-all">
+                        <button type="button" id="applyCouponBtn" class="bg-slate-800 hover:bg-slate-900 dark:bg-slate-700 dark:hover:bg-slate-600 text-white px-5 py-2 rounded-xl text-sm font-medium transition-colors whitespace-nowrap">
+                            החלת קופון
+                        </button>
+                    </div>
+                    <p id="couponMessage" class="mt-2 text-xs font-medium hidden"></p>
+                </div>
+
+                <div class="bg-slate-50 dark:bg-slate-950/60 border border-slate-100 dark:border-slate-800/80 rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 text-right">
+                    
+                    <div id="standardOutputArea" class="block">
+                        <div id="displayCertID" class="text-sm font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">קוד תעודה: --</div>
+                        <div id="displayFinalPrice" class="text-3xl sm:text-4xl font-extrabold text-blue-600 dark:text-blue-400">מחיר התעודה: 0 ₪</div>
+                        <div id="displayDiscountText" class="text-xs text-emerald-600 dark:text-emerald-400 font-medium mt-1 hidden">כולל 20% הנחת קופון יוצרים!</div>
+                    </div>
+
+                    <div id="specialPriceArea" class="hidden max-w-md">
+                        <div class="text-amber-600 dark:text-amber-400 font-bold text-lg mb-1 flex items-center gap-1">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                            נדרשת הצעת מחיר מיוחדת
+                        </div>
+                        <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                            שווי הציוד חורג מגבולות הטבלה הרגילה. אנא שלח לנו הודעה לקבלת הצעת מחיר מותאמת אישית עבור ציוד פרימיום.
+                        </p>
+                    </div>
+
+                    <div class="w-full sm:w-auto space-y-3">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">כתובת אימייל למשלוח התעודה</label>
+                            <input type="email" id="userEmail" required placeholder="כתובת האימייל שלך" class="block w-full px-4 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-sm dark:text-white transition-all">
+                        </div>
+                        <button type="submit" id="submitBtn" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3.5 rounded-xl shadow-md transition-all text-center">
+                            שליחת בקשת רכישה במייל
+                        </button>
+                    </div>
+                </div>
+
+                <div id="formFeedback" class="p-4 rounded-xl text-sm font-medium hidden text-center"></div>
+
+            </form>
+        </div>
+    </section>
+
+    <section id="benefits" class="py-20 bg-white dark:bg-slate-900 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-4">למה מקצוענים בוחרים בכיסוי של Mack?</h2>
+                <p class="text-slate-600 dark:text-slate-400">כל מה שאתה צריך לדעת על היתרונות הייחודיים שהופכים את תעודות האחריות של Mack לבחירה הבטוחה ביותר עבור יוצרים וצלמים.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-slate-50 dark:bg-slate-950 p-6 rounded-2xl border border-slate-100 dark:border-slate-800/60 transition-all hover:shadow-md">
+                    <div class="w-12 h-12 bg-blue-100 dark:bg-blue-950 text-blue-600 dark:text-blue-400 rounded-xl flex items-center justify-center mb-5">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">כיסוי בינלאומי מלא</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">מטיילים או מצלמים בחו"ל? האחריות של Mack תקפה בכל העולם ומול מעבדות מוסמכות, כך שאתם מוגנים לחלוטין גם מחוץ לגבולות המדינה.</p>
+                </div>
+                <div class="bg-slate-50 dark:bg-slate-950 p-6 rounded-2xl border border-slate-100 dark:border-slate-800/60 transition-all hover:shadow-md">
+                    <div class="w-12 h-12 bg-blue-100 dark:bg-blue-950 text-blue-600 dark:text-blue-400 rounded-xl flex items-center justify-center mb-5">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">חלון הזדמנות של 30 יום</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed"><span class="text-red-500 font-medium">חשוב מאוד:</span> ניתן לרכוש ולהפעיל את תעודת האחריות בתוך 30 יום בלבד ממועד רכישת הציוד המקורי שלך! אל תפספסו את חלון הזמן.</p>
+                </div>
+                <div class="bg-slate-50 dark:bg-slate-950 p-6 rounded-2xl border border-slate-100 dark:border-slate-800/60 transition-all hover:shadow-md">
+                    <div class="w-12 h-12 bg-blue-100 dark:bg-blue-950 text-blue-600 dark:text-blue-400 rounded-xl flex items-center justify-center mb-5">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">המחיר המשתלם בשוק</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">כסוכן מורשה ישיר עם מעל 12 שנות ניסיון, אתה נהנה מתעריפים מועדפים ומנצח ללא פערי תיווך מופקעים של חנויות ורשתות קמעונאיות.</p>
+                </div>
+                <div class="bg-slate-50 dark:bg-slate-950 p-6 rounded-2xl border border-slate-100 dark:border-slate-800/60 transition-all hover:shadow-md">
+                    <div class="w-12 h-12 bg-blue-100 dark:bg-blue-950 text-blue-600 dark:text-blue-400 rounded-xl flex items-center justify-center mb-5">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">שירות ותמיכה אישית בעברית</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">מענה אנושי ומקצועי, כולל ליווי מלא ומדויק לכל אורך תהליך הרישום, ההפעלה וההטמעה של התעודה מול האתר העולמי הרשמי.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="py-20 bg-slate-50 dark:bg-slate-950 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-4">תהליך פשוט ב-4 שלבים מהירים</h2>
+                <p class="text-slate-600 dark:text-slate-400">איך מבטחים את הציור ומקבלים את האישור הדיגיטלי בצורה שקופה וישירה?</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+                <div class="relative bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 transition-colors">
+                    <span class="absolute -top-4 right-4 w-10 h-10 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center text-lg shadow-md">1</span>
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mt-4 mb-2">מחשבים ומזינים</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">מזינים את עלות הציור בשקלים (ללא מע"מ) וכתובת אימייל, והמערכת מתאימה עבורכם את קוד התעודה והעלות המדויקת בשקלים.</p>
+                </div>
+                <div class="relative bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 transition-colors">
+                    <span class="absolute -top-4 right-4 w-10 h-10 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center text-lg shadow-md">2</span>
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mt-4 mb-2">שולחים בקשה</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">לוחצים על כפתור השליחה והפרטים המדויקים נשלחים אלינו בצורה מאובטחת ושקופה ברקע להפקת התעודה הרשמית.</p>
+                </div>
+                <div class="relative bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 transition-colors">
+                    <span class="absolute -top-4 right-4 w-10 h-10 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center text-lg shadow-md">3</span>
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mt-4 mb-2">מפעילים באתר העולמי</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">מקבלים מאיתנו את קוד התעודה הדיגיטלי (ה-ID), נכנסים לאתר הרשמי MACKCAM.com, ומזינים אותו יחד עם קבלת הרכישה של הציוד.</p>
+                </div>
+                <div class="relative bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 transition-colors">
+                    <span class="absolute -top-4 right-4 w-10 h-10 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center text-lg shadow-md">4</span>
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mt-4 mb-2">ראש שקט</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">התהליך הושלם בצורה מלאה! הציוד היקר שלך מוגן ומבוטח ברמה הגבוהה ביותר בכל העולם מפני כל צרה שלא תבוא.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-20 bg-white dark:bg-slate-900 transition-colors">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-4">שאלות ותשובות נפוצות</h2>
+                <p class="text-slate-600 dark:text-slate-400">יש לך שאלות נוספות? אספנו עבורך תשובות לשאלות הנפוצות ביותר שמעניינות יוצרים ויוצרות.</p>
+            </div>
+
+            <div id="faqContainer" class="space-y-4 max-w-3xl mx-auto">
+                <p class="text-center text-slate-500 dark:text-slate-400 py-4">טוען שאלות ותשובות...</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+            <p class="text-sm font-medium text-slate-300">Mack Warranty - סוכן מורשה עצמאי רשמי</p>
+            <p class="text-xs max-w-2xl mx-auto leading-relaxed text-slate-500">
+                הבהרה משפטית: אתר זה מופעל ומנוהל על ידי סוכן מורשה רשמי עצמאי למכירת תעודות שירות והרחבות אחריות של חברת Mack Worldwide Warranty. אתר זה אינו אתר התאגיד הרשמי העולמי (MACKCAM.com) אלא פלטפורמת הפצה מורשית המשרתת את קהל הלקוחות בישראל ובחו"ל.
+            </p>
+            <div class="pt-6 border-t border-slate-800 text-xs text-slate-600">
+                &copy; 2026 כל הזכויות שמורות לסוכן מורשה Mack Warranty.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Module Scope State Variables
+        let pricingData = null;
+        let faqData = null;
+        let exchangeRate = 3.65; // Safe fallback value
+        let currentType = "STANDARD";
+        let currentDuration = "3 שנים";
+        let isDiscountApplied = false;
+        const EXPECTED_COUPON_HASH = "099a818fa8f94cb0201d84b067bf755364137f82794c4897f26f29dfcf331b0e"; // SHA-256 for "CREATOR20"
+
+        // DOM Element Cache
+        const themeToggle = document.getElementById('themeToggle');
+        const sunIcon = document.getElementById('sunIcon');
+        const moonIcon = document.getElementById('moonIcon');
+        const gearValueInput = document.getElementById('gearValueInput');
+        const exchangeRateText = document.getElementById('exchangeRateText');
+        const typeStandard = document.getElementById('typeStandard');
+        const typeDiamond = document.getElementById('typeDiamond');
+        const btn3Y = document.getElementById('btn3Y');
+        const btn5Y = document.getElementById('btn5Y');
+        const couponInput = document.getElementById('couponInput');
+        const applyCouponBtn = document.getElementById('applyCouponBtn');
+        const couponMessage = document.getElementById('couponMessage');
+        const displayCertID = document.getElementById('displayCertID');
+        const displayFinalPrice = document.getElementById('displayFinalPrice');
+        const displayDiscountText = document.getElementById('displayDiscountText');
+        const userEmail = document.getElementById('userEmail');
+        const leadForm = document.getElementById('leadForm');
+        const formFeedback = document.getElementById('formFeedback');
+        const faqContainer = document.getElementById('faqContainer');
+
+        // Overflow Output UI Areas
+        const standardOutputArea = document.getElementById('standardOutputArea');
+        const specialPriceArea = document.getElementById('specialPriceArea');
+        const submitBtn = document.getElementById('submitBtn');
+
+        // Hidden Inputs References
+        const hiddenGearILS = document.getElementById('hiddenGearILS');
+        const hiddenGearUSD = document.getElementById('hiddenGearUSD');
+        const hiddenType = document.getElementById('hiddenType');
+        const hiddenDuration = document.getElementById('hiddenDuration');
+        const hiddenCertID = document.getElementById('hiddenCertID');
+        const hiddenFinalPriceILS = document.getElementById('hiddenFinalPriceILS');
+        const hiddenCouponApplied = document.getElementById('hiddenCouponApplied');
+
+        // Theme Initialization & Management
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            sunIcon.classList.remove('hidden');
+        } else {
+            document.documentElement.classList.remove('dark');
+            moonIcon.classList.remove('hidden');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+                moonIcon.classList.add('hidden');
+                sunIcon.classList.remove('hidden');
+            }
+        });
+
+        // SHA-256 Asynchronous Hashing Utility
+        async function sha256(message) {
+            const msgBuffer = new TextEncoder().encode(message);
+            const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+        }
+
+        // Master Data Loader Pipeline
+        async function initializeApplicationData() {
+            try {
+                // Live Exchange Rate API Execution
+                try {
+                    const exchangeResponse = await fetch('https://open.er-api.com/v6/latest/USD');
+                    if (!exchangeResponse.ok) throw new Error('Exchange rate fetch network error');
+                    const exchangeResult = await exchangeResponse.json();
+                    if (exchangeResult && exchangeResult.rates && exchangeResult.rates.ILS) {
+                        exchangeRate = parseFloat(exchangeResult.rates.ILS);
+                    }
+                } catch (exchangeError) {
+                    console.warn('Using standard hardcoded exchange fallback due to API connection error:', exchangeError);
+                }
+
+                exchangeRateText.innerHTML = `
+                    <svg class="w-3.5 h-3.5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    שער חליפין עדכני: 1$ = ${exchangeRate.toFixed(2)} ₪
+                `;
+
+                // Parallel Local Matrix File Ingestion
+                const [pricingRes, faqRes] = await Promise.all([
+                    fetch('pricing.json'),
+                    fetch('faq.json')
+                ]);
+
+                if (!pricingRes.ok || !faqRes.ok) throw new Error('Local JSON resources failed to map completely.');
+
+                pricingData = await pricingRes.json();
+                faqData = await faqRes.json();
+
+                renderFaqInterface();
+                executeCalculatorPipeline();
+
+            } catch (globalFetchError) {
+                console.error('Critical boot error encountered:', globalFetchError);
+                faqContainer.innerHTML = `<p class="text-center text-red-500 py-4 font-medium">שגיאה בטעינת נתוני האתר הדינמיים. אנא ודא שהקובץ רץ על שרת מקומי או GitHub Pages.</p>`;
+            }
+        }
+
+        // Render Dynamic FAQ Accordions
+        function renderFaqInterface() {
+            if (!faqData || !faqData.faqs) return;
+            faqContainer.innerHTML = '';
+            
+            faqData.faqs.forEach((faq, idx) => {
+                const itemDiv = document.createElement('div');
+                itemDiv.className = "border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-slate-900 transition-colors";
+                
+                itemDiv.innerHTML = `
+                    <button type="button" class="faq-trigger w-full px-6 py-4 flex items-center justify-between text-right font-bold text-slate-800 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors" data-index="${idx}">
+                        <span>${faq.question}</span>
+                        <svg class="faq-icon w-4 h-4 text-slate-400 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-slate-50/50 dark:bg-slate-950/20">
+                        <div class="px-6 py-4 text-sm text-slate-600 dark:text-slate-400 leading-relaxed border-t border-slate-100 dark:border-slate-800">
+                            ${faq.answer}
+                        </div>
+                    </div>
+                `;
+                faqContainer.appendChild(itemDiv);
+            });
+
+            // Click Event Listeners Mapping
+            document.querySelectorAll('.faq-trigger').forEach(trigger => {
+                trigger.addEventListener('click', () => {
+                    const content = trigger.nextElementSibling;
+                    const icon = trigger.querySelector('.faq-icon');
+                    
+                    if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                        content.style.maxHeight = '0px';
+                        icon.classList.remove('rotate-180');
+                    } else {
+                        document.querySelectorAll('.faq-content').forEach(c => c.style.maxHeight = '0px');
+                        document.querySelectorAll('.faq-icon').forEach(i => i.classList.remove('rotate-180'));
+                        
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                        icon.classList.add('rotate-180');
+                    }
+                });
+            });
+        }
+
+        // Core Mathematical Processing Pipeline
+        function executeCalculatorPipeline() {
+            if (!pricingData) return;
+
+            const inputIls = parseFloat(gearValueInput.value) || 0;
+            const convertedUsd = inputIls / exchangeRate;
+            
+            let selectedTableKey = "";
+            if (currentType === "STANDARD") {
+                selectedTableKey = currentDuration === "3 שנים" ? "standard_3y" : "standard_5y";
+            } else {
+                selectedTableKey = "diamond_intl_3y";
+            }
+
+            const targetArray = pricingData.tables[selectedTableKey];
+            let matchedObject = null;
+
+            // Search the selected table array for the FIRST object where calculated USD gear value <= max
+            for (let i = 0; i < targetArray.length; i++) {
+                if (convertedUsd <= targetArray[i].max) {
+                    matchedObject = targetArray[i];
+                    break;
+                }
+            }
+
+            // Check if input value exceeds the absolute maximum threshold of the current table matrix
+            const absoluteMaxInTable = targetArray[targetArray.length - 1].max;
+            
+            if (convertedUsd > absoluteMaxInTable) {
+                // UI Overflow State: Equipment Value is higher than price grid limits
+                standardOutputArea.classList.replace('block', 'hidden');
+                specialPriceArea.classList.replace('hidden', 'block');
+                submitBtn.textContent = "בקשת הצעת מחיר מיוחדת במייל";
+                submitBtn.className = "w-full bg-amber-600 hover:bg-amber-700 text-white font-bold px-6 py-3.5 rounded-xl shadow-md transition-all text-center";
+
+                // Populate form fields with placeholder indicators for fallback lead delivery
+                hiddenGearILS.value = inputIls;
+                hiddenGearUSD.value = convertedUsd.toFixed(2);
+                hiddenType.value = currentType;
+                hiddenDuration.value = currentDuration === "3 שנים" ? "3 Years" : "5 Years";
+                hiddenCertID.value = "SPECIAL_PRICE_REQ";
+                hiddenFinalPriceILS.value = "OVERFLOW_METER";
+                return;
+            }
+
+            // Standard Execution Path (Normal Price Found)
+            standardOutputArea.classList.replace('hidden', 'block');
+            specialPriceArea.classList.replace('block', 'hidden');
+            submitBtn.textContent = "שליחת בקשת רכישה במייל";
+            submitBtn.className = "w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3.5 rounded-xl shadow-md transition-all text-center";
+
+            if (matchedObject) {
+                let basePriceUsd = matchedObject.price;
+                let finalPriceIls = basePriceUsd * exchangeRate;
+
+                if (isDiscountApplied) {
+                    finalPriceIls = finalPriceIls * 0.8;
+                }
+
+                const displayPriceRounded = Math.round(finalPriceIls);
+
+                // Update UI Typography
+                displayCertID.textContent = `קוד תעודה: ${matchedObject.ID}`;
+                displayFinalPrice.textContent = `מחיר התעודה: ${displayPriceRounded.toLocaleString()} ₪`;
+
+                // Update Hidden Form Fields
+                hiddenGearILS.value = inputIls;
+                hiddenGearUSD.value = convertedUsd.toFixed(2);
+                hiddenType.value = currentType;
+                hiddenDuration.value = currentDuration === "3 שנים" ? "3 Years" : "5 Years";
+                hiddenCertID.value = matchedObject.ID;
+                hiddenFinalPriceILS.value = displayPriceRounded;
+            }
+        }
+
+        // Tab State Switch Handlers (Refactored to completely bypass unsafe CSS class string queries)
+        typeStandard.addEventListener('click', () => {
+            currentType = "STANDARD";
+            
+            // Standard Visual Focus Active
+            typeStandard.className = "cursor-pointer border-2 border-blue-600 bg-blue-50/30 dark:bg-blue-950/20 rounded-2xl p-5 transition-all select-none relative";
+            typeStandard.querySelector('.dot-outer').className = "dot-outer w-5 h-5 rounded-full border-2 border-blue-600 flex items-center justify-center";
+            typeStandard.querySelector('.dot-inner').className = "dot-inner w-2.5 h-2.5 bg-blue-600 rounded-full";
+
+            // Diamond Blurred Out
+            typeDiamond.className = "cursor-pointer border-2 border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 rounded-2xl p-5 transition-all select-none relative hover:border-slate-300 dark:hover:border-slate-700";
+            typeDiamond.querySelector('.dot-outer').className = "dot-outer w-5 h-5 rounded-full border-2 border-slate-300 dark:border-slate-700 flex items-center justify-center";
+            typeDiamond.querySelector('.dot-inner').className = "dot-inner w-2.5 h-2.5 bg-transparent rounded-full";
+
+            btn5Y.classList.remove('hidden');
+            executeCalculatorPipeline();
+        });
+
+        typeDiamond.addEventListener('click', () => {
+            currentType = "DIAMOND";
+            
+            // Diamond Visual Focus Active
+            typeDiamond.className = "cursor-pointer border-2 border-blue-600 bg-blue-50/30 dark:bg-blue-950/20 rounded-2xl p-5 transition-all select-none relative";
+            typeDiamond.querySelector('.dot-outer').className = "dot-outer w-5 h-5 rounded-full border-2 border-blue-600 flex items-center justify-center";
+            typeDiamond.querySelector('.dot-inner').className = "dot-inner w-2.5 h-2.5 bg-blue-600 rounded-full";
+
+            // Standard Blurred Out
+            typeStandard.className = "cursor-pointer border-2 border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 rounded-2xl p-5 transition-all select-none relative hover:border-slate-300 dark:hover:border-slate-700";
+            typeStandard.querySelector('.dot-outer').className = "dot-outer w-5 h-5 rounded-full border-2 border-slate-300 dark:border-slate-700 flex items-center justify-center";
+            typeStandard.querySelector('.dot-inner').className = "dot-inner w-2.5 h-2.5 bg-transparent rounded-full";
+
+            // Enforce constraints logic -> Diamond hides 5y, locks state to 3y
+            currentDuration = "3 שנים";
+            btn3Y.className = "px-6 py-2.5 rounded-full text-sm font-medium border-2 border-blue-600 bg-blue-600 text-white transition-all select-none";
+            btn5Y.classList.add('hidden');
+            
+            executeCalculatorPipeline();
+        });
+
+        btn3Y.addEventListener('click', () => {
+            currentDuration = "3 שנים";
+            btn3Y.className = "px-6 py-2.5 rounded-full text-sm font-medium border-2 border-blue-600 bg-blue-600 text-white transition-all select-none";
+            btn5Y.className = "px-6 py-2.5 rounded-full text-sm font-medium border-2 border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:border-slate-300 dark:hover:border-slate-700 transition-all select-none";
+            executeCalculatorPipeline();
+        });
+
+        btn5Y.addEventListener('click', () => {
+            if (currentType === "DIAMOND") return;
+            currentDuration = "5 שנים";
+            btn5Y.className = "px-6 py-2.5 rounded-full text-sm font-medium border-2 border-blue-600 bg-blue-600 text-white transition-all select-none";
+            btn3Y.className = "px-6 py-2.5 rounded-full text-sm font-medium border-2 border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:border-slate-300 dark:hover:border-slate-700 transition-all select-none";
+            executeCalculatorPipeline();
+        });
+
+        gearValueInput.addEventListener('input', executeCalculatorPipeline);
+
+        // Crypto Ingestion for Secure Coupon Logic
+        applyCouponBtn.addEventListener('click', async () => {
+            const codeRaw = couponInput.value.trim().toUpperCase();
+            if (!codeRaw) return;
+
+            const computedHash = await sha256(codeRaw);
+
+            if (computedHash === EXPECTED_COUPON_HASH) {
+                isDiscountApplied = true;
+                hiddenCouponApplied.value = "Yes";
+                couponMessage.className = "mt-2 text-xs font-medium text-emerald-600 dark:text-emerald-400";
+                couponMessage.textContent = "קוד קופון החל בהצלחה! קבלת 20% הנחה.";
+                displayDiscountText.classList.remove('hidden');
+                executeCalculatorPipeline();
+            } else {
+                couponMessage.className = "mt-2 text-xs font-medium text-red-500";
+                couponMessage.textContent = "קוד קופון לא חוקי. נסה שנית.";
+            }
+        });
+
+        // Background Submission Intercept Engine (Formspree Asynchronous Engine)
+        leadForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            formFeedback.classList.add('hidden');
+            submitBtn.disabled = true;
+            const originalBtnText = submitBtn.textContent;
+            submitBtn.textContent = "מעבד...";
+
+            const formDataInstance = new FormData(leadForm);
+            formDataInstance.append("User_Email_Field", userEmail.value);
+
+            try {
+                const formSubmissionUrl = leadForm.action;
+                const response = await fetch(formSubmissionUrl, {
+                    method: 'POST',
+                    body: formDataInstance,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    formFeedback.className = "p-4 rounded-xl text-sm font-medium text-center bg-emerald-100 text-emerald-800 dark:bg-emerald-950/50 dark:text-emerald-400 block";
+                    formFeedback.textContent = "בקשתך התקבלה בהצלחה! ניצור עמך קשר במייל בהקדם.";
+                    leadForm.reset();
+                    
+                    currentType = "STANDARD";
+                    currentDuration = "3 שנים";
+                    isDiscountApplied = false;
+                    displayDiscountText.classList.add('hidden');
+                    couponMessage.classList.add('hidden');
+                    btn5Y.classList.remove('hidden');
+                    executeCalculatorPipeline();
+                } else {
+                    throw new Error('Formspree endpoint failure');
+                }
+            } catch (submissionErr) {
+                formFeedback.className = "p-4 rounded-xl text-sm font-medium text-center bg-red-100 text-red-800 dark:bg-red-950/50 dark:text-red-400 block";
+                formFeedback.textContent = "אירעה שגיאה בעיבוד הנתונים שלך. אנא נסה שנית מאוחר יותר או שלח לנו מייל ישיר.";
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalBtnText;
+            }
+        });
+
+        // Initial App Ingestion Kickstart
+        window.addEventListener('DOMContentLoaded', initializeApplicationData);
+    </script>
+</body>
+</html>
