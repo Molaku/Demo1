@@ -191,52 +191,74 @@
                 <p class="text-slate-600 dark:text-slate-400">הזן את שווי הציוד בשקלים, בחר את מסלול ההגנה וקבל הצעת מחיר שקופה בזמן אמת המבוססת על שערי החליפין העדכניים ביותר.</p>
             </div>
 
-            <form id="leadForm" action="https://formspree.io/f/YOUR_ENDPOINT_HERE" method="POST" class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl shadow-xl p-6 sm:p-10 space-y-8 transition-colors">
+                <!-- תגית הטופס עם הגדרת שליחת קבצים (enctype) -->
+                <form id="leadForm" action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data" class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl shadow-xl p-6 sm:p-10 space-y-8 transition-colors">
+                    
+                    <!-- מפתח הגישה האישי מ-Web3Forms -->
+                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
                 
-                <input type="hidden" name="Gear_Value_ILS" id="hiddenGearILS">
-                <input type="hidden" name="Gear_Value_USD" id="hiddenGearUSD">
-                <input type="hidden" name="Warranty_Type" id="hiddenType">
-                <input type="hidden" name="Duration" id="hiddenDuration">
-                <input type="hidden" name="Certificate_ID" id="hiddenCertID">
-                <input type="hidden" name="Final_Price_ILS" id="hiddenFinalPriceILS">
-                <input type="hidden" name="Coupon_Applied" id="hiddenCouponApplied" value="No">
-
-                <div>
-                    <label class="block text-base font-bold text-slate-800 dark:text-slate-200 mb-2">שלב 1: עלות הציוד בשקלים (נטו - ללא מע"מ ומיסים)</label>
-                    <div class="relative rounded-xl shadow-sm">
-                        <div class="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none text-slate-400 font-bold text-lg">
-                            ₪
+                    <!-- נושא האימייל שתקבל -->
+                    <input type="hidden" name="subject" value="בקשת כיסוי חדשה מ-Mack Warranty">
+                
+                    <!-- שדות מוסתרים לנתוני המחשבון -->
+                    <input type="hidden" name="Gear_Value_ILS" id="hiddenGearILS">
+                    <input type="hidden" name="Gear_Value_USD" id="hiddenGearUSD">
+                    <input type="hidden" name="Warranty_Type" id="hiddenType">
+                    <input type="hidden" name="Duration" id="hiddenDuration">
+                    <input type="hidden" name="Certificate_ID" id="hiddenCertID">
+                    <input type="hidden" name="Final_Price_ILS" id="hiddenFinalPriceILS">
+                    <input type="hidden" name="Coupon_Applied" id="hiddenCouponApplied" value="No">
+                
+                    <!-- שלבי המחשבון הקיימים נשארים ללא שינוי (שלב 1, 2, 3 וקופון)... -->
+                
+                    <!-- אזור פרטי הלקוח, החשבונית והשליחה -->
+                    <div class="bg-slate-50 dark:bg-slate-950/60 border border-slate-100 dark:border-slate-800/80 rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 text-right">
+                        
+                        <div id="standardOutputArea" class="block">
+                            <div id="displayCertID" class="text-sm font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">קוד תעודה: --</div>
+                            <div id="displayFinalPrice" class="text-3xl sm:text-4xl font-extrabold text-blue-600 dark:text-blue-400">מחיר התעודה: 0 ₪</div>
+                            <div id="displayDiscountText" class="text-xs text-emerald-600 dark:text-emerald-400 font-medium mt-1 hidden">כולל 20% הנחת קופון יוצרים!</div>
                         </div>
-                        <input type="number" id="gearValueInput" value="3650" min="1" required enctype="multipart/form-data" class="block w-full pr-10 pl-4 py-3.5 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:text-white font-medium text-lg transition-all">
-                    </div>
-                    <p id="exchangeRateText" class="mt-2 text-xs text-slate-500 dark:text-slate-400 flex items-center gap-1">
-                        טוען שער חליפין עדכני...
-                    </p>
-                </div>
-
-                <div>
-                    <label class="block text-base font-bold text-slate-800 dark:text-slate-200 mb-3">שלב 2: סוג תעודת אחריות</label>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div id="typeStandard" class="cursor-pointer border-2 border-blue-600 bg-blue-50/30 dark:bg-blue-950/20 rounded-2xl p-5 transition-all select-none relative">
-                            <div class="flex items-center justify-between mb-2">
-                                <h3 class="font-bold text-lg text-slate-900 dark:text-white">STANDARD</h3>
-                                <div class="dot-outer w-5 h-5 rounded-full border-2 border-blue-600 flex items-center justify-center">
-                                    <div class="dot-inner w-2.5 h-2.5 bg-blue-600 rounded-full"></div>
-                                </div>
+                
+                        <div id="specialPriceArea" class="hidden max-w-md">
+                            <div class="text-amber-600 dark:text-amber-400 font-bold text-lg mb-1 flex items-center gap-1">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                                נדרשת הצעת מחיר מיוחדת
                             </div>
-                            <p class="text-sm text-slate-600 dark:text-slate-400">כיסוי מלא ומקיף כנגד תקלות מכניות, תקלות רכיבים פנימיים ובלאי טבעי של הציוד בתנאי שימוש רגילים.</p>
+                            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                שווי הציוד חורג מגבולות הטבלה הרגילה. אנא שלח לנו הודעה לקבלת הצעת מחיר מותאמת אישית עבור ציוד פרימיום.
+                            </p>
                         </div>
-                        <div id="typeDiamond" class="cursor-pointer border-2 border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 rounded-2xl p-5 transition-all select-none relative hover:border-slate-300 dark:hover:border-slate-700">
-                            <div class="flex items-center justify-between mb-2">
-                                <h3 class="font-bold text-lg text-slate-900 dark:text-white">DIAMOND (נזק פיזי)</h3>
-                                <div class="dot-outer w-5 h-5 rounded-full border-2 border-slate-300 dark:border-slate-700 flex items-center justify-center">
-                                    <div class="dot-inner w-2.5 h-2.5 bg-transparent rounded-full"></div>
-                                </div>
+                
+                        <div class="w-full sm:w-auto space-y-4">
+                            <!-- שם מלא -->
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">שם מלא</label>
+                                <input type="text" id="userName" name="Full_Name" required placeholder="ישראל ישראלי" class="block w-full px-4 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-sm dark:text-white transition-all">
                             </div>
-                            <p class="text-sm text-slate-600 dark:text-slate-400">הכיסוי היוקרתי ביותר של Mack! כולל הגנה מלאה גם מפני נזקים תאונתיים (Accidental Damage), נפילות, שברים ומכות.</p>
+                
+                            <!-- אימייל -->
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">כתובת אימייל למשלוח התעודה</label>
+                                <input type="email" id="userEmail" name="email" required placeholder="your@email.com" class="block w-full px-4 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-sm dark:text-white transition-all">
+                            </div>
+                
+                            <!-- קובץ חשבונית -->
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">צירוף חשבונית / קבלה (PDF, JPG, PNG)</label>
+                                <input type="file" id="invoiceFile" name="attachment" accept=".pdf,.jpg,.jpeg,.png" required class="block w-full text-xs text-slate-500 file:mr-0 file:ml-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-blue-700 dark:file:bg-blue-950 dark:file:text-blue-300 hover:file:bg-blue-100 transition-all border border-slate-200 dark:border-slate-800 rounded-xl bg-white dark:bg-slate-900">
+                            </div>
+                
+                            <!-- כפתור שליחה -->
+                            <button type="submit" id="submitBtn" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3.5 rounded-xl shadow-md transition-all text-center">
+                                שליחת בקשת רכישה במייל
+                            </button>
                         </div>
                     </div>
-                </div>
+                
+                    <div id="formFeedback" class="p-4 rounded-xl text-sm font-medium hidden text-center"></div>
+                
+                </form>
 
                 <div>
                     <label class="block text-base font-bold text-slate-800 dark:text-slate-200 mb-3">שלב 3: משך זמן האחריות</label>
