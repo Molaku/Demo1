@@ -740,33 +740,34 @@
             }
         });
 
-        // Background Submission Intercept Engine (Formspree Asynchronous Engine)
+        // טיפול בשליחת הטופס מול Web3Forms
         leadForm.addEventListener('submit', async (e) => {
             e.preventDefault();
             
             formFeedback.classList.add('hidden');
             submitBtn.disabled = true;
             const originalBtnText = submitBtn.textContent;
-            submitBtn.textContent = "מעבד...";
-
+            submitBtn.textContent = "מעבד ושולח...";
+        
+            // FormData שואב אוטומטית את כל שדות הטופס (כולל הקובץ המצורף וה-Access Key)
             const formDataInstance = new FormData(leadForm);
-            formDataInstance.append("User_Email_Field", userEmail.value);
-
+        
             try {
-                const formSubmissionUrl = leadForm.action;
-                const response = await fetch(formSubmissionUrl, {
+                const response = await fetch('https://api.web3forms.com/submit', {
                     method: 'POST',
-                    body: formDataInstance,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
+                    body: formDataInstance
                 });
-
-                if (response.ok) {
+        
+                const result = await response.json();
+        
+                if (result.success) {
                     formFeedback.className = "p-4 rounded-xl text-sm font-medium text-center bg-emerald-100 text-emerald-800 dark:bg-emerald-950/50 dark:text-emerald-400 block";
-                    formFeedback.textContent = "בקשתך התקבלה בהצלחה! ניצור עמך קשר במייל בהקדם.";
+                    formFeedback.textContent = "בקשתך התקבלה בהצלחה! החשבונית והפרטים נשלחו אלינו, ניצור עמך קשר במייל בהקדם.";
+                    
+                    // איפוס הטופס
                     leadForm.reset();
                     
+                    // איפוס מצב ברירת המחדל של המחשבון
                     currentType = "STANDARD";
                     currentDuration = "3 שנים";
                     isDiscountApplied = false;
@@ -775,17 +776,18 @@
                     btn5Y.classList.remove('hidden');
                     executeCalculatorPipeline();
                 } else {
-                    throw new Error('Formspree endpoint failure');
+                    throw new Error(result.message || 'שגיאה בשליחת הטופס');
                 }
             } catch (submissionErr) {
+                console.error('Submission Error:', submissionErr);
                 formFeedback.className = "p-4 rounded-xl text-sm font-medium text-center bg-red-100 text-red-800 dark:bg-red-950/50 dark:text-red-400 block";
-                formFeedback.textContent = "אירעה שגיאה בעיבוד הנתונים שלך. אנא נסה שנית מאוחר יותר או שלח לנו מייל ישיר.";
+                formFeedback.textContent = "אירעה שגיאה בעיבוד הנתונים. אנא ודא שהקובץ תקין ונסה שנית.";
             } finally {
                 submitBtn.disabled = false;
                 submitBtn.textContent = originalBtnText;
             }
         });
-
+        
         // Initial App Ingestion Kickstart
         window.addEventListener('DOMContentLoaded', initializeApplicationData);
     </script>
