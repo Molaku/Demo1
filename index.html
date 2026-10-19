@@ -57,4 +57,99 @@
             </nav>
 
             <div class="flex items-center gap-4">
-                <button id="themeToggle" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-
+                <button id="themeToggle" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:ring-2 hover:ring-slate-300 dark:hover:ring-slate-700 transition-all" aria-label="Toggle theme">
+                    <svg id="sunIcon" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M12 5a7 7 0 100 14 7 7 0 000-14z"/></svg>
+                    <svg id="moonIcon" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+                </button>
+                <a href="#calculator" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium shadow-sm transition-colors hidden sm:inline-block">להפקת תעודה</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden py-16 lg:py-24 border-b border-slate-200 dark:border-slate-900 bg-gradient-to-b from-white to-slate-50 dark:from-slate-900 dark:to-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6 text-right relative z-10">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800 dark:bg-emerald-950/50 dark:text-emerald-400">
+                        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6.267 3.455a.75.75 0 00-.708.522L3.511 12.24l-.01.042a3.25 3.25 0 003.111 4.018h6.776a3.25 3.25 0 003.111-4.018l-.01-.042-2.048-8.263a.75.75 0 00-.707-.522H6.267zm2.233 6.795a1 1 0 112 0 1 1 0 01-2 0z" clip-rule="evenodd"/></svg>
+                        סוכן מורשה רשמי - Authorized Agent
+                    </span>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 dark:text-white leading-tight">
+                        הגנה מוחלטת לציוד הצילום שלך – תעודות אחריות בינלאומיות של <span class="text-blue-600 dark:text-blue-400">Mack Warranty</span> במחירים המשתלמים ביותר
+                    </h1>
+                    
+                    <p class="text-lg sm:text-xl text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed">
+                        אל תסכן את הציוד היקר שלך. כסוכן מורשה רשמי עם מעל 12 שנות ניסיון, אני מציע לך את הכיסוי המקיף ביותר נגד תקלות ונזקים, עם תוקף בינלאומי מלא ומעבדת שירות מוסמכת.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row items-center justify-start gap-4 pt-4">
+                        <a href="#calculator" class="w-full sm:w-auto text-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-medium shadow-lg shadow-blue-600/10 dark:shadow-none transition-all hover:-translate-y-0.5 text-lg">
+                            לחשבון עלות ורכישה
+                        </a>
+                        <a href="#benefits" class="w-full sm:w-auto text-center bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 px-8 py-4 rounded-xl font-medium border border-slate-200 dark:border-slate-800 transition-all text-lg">
+                            למה דווקא Mack?
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-5 relative flex justify-center items-center">
+                    <div class="relative w-full max-w-md aspect-square rounded-3xl overflow-hidden premium-shadow bg-slate-200 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-slate-900/40 to-transparent z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80" alt="Premium Camera Equipment Concept" class="w-full h-full object-cover grayscale-[15%] hover:grayscale-0 transition-all duration-700">
+                    </div>
+                    
+                    <div class="absolute -top-4 -right-4 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-4 rounded-2xl premium-shadow flex items-center gap-3 z-20 animate-bounce-slow">
+                        <div class="p-2.5 bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-400 rounded-xl">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 dark:text-slate-500 font-medium">כיסוי גלובלי</p>
+                            <p class="text-sm font-bold text-slate-800 dark:text-slate-100">100% רשמי ומאושר</p>
+                        </div>
+                    </div>
+
+                    <div class="absolute -bottom-4 -left-4 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-4 rounded-2xl premium-shadow flex items-center gap-3 z-20">
+                        <div class="p-2.5 bg-emerald-50 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 rounded-xl">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 dark:text-slate-500 font-medium">ליווי מקצועי</p>
+                            <p class="text-sm font-bold text-slate-800 dark:text-slate-100">שירות אמין ומנוסה</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white dark:bg-slate-900 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-5 order-2 lg:order-1 relative">
+                    <div class="w-full max-w-md aspect-[4/3] rounded-3xl overflow-hidden premium-shadow bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Mack Worldwide Headquarters Concept" class="w-full h-full object-cover opacity-90 contrast-105">
+                    </div>
+                    
+                    <div class="mt-6 bg-slate-50 dark:bg-slate-950 p-6 rounded-2xl border border-slate-100 dark:border-slate-800/60 flex flex-col space-y-4 max-w-md">
+                        <div class="flex items-start gap-4">
+                            <div class="p-2.5 bg-blue-100 dark:bg-blue-950 text-blue-600 dark:text-blue-400 rounded-xl shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 dark:text-white text-sm">מטה החברה</h4>
+                                <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Springfield, New Jersey, USA</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="p-2.5 bg-blue-100 dark:bg-blue-950 text-blue-600 dark:text-blue-400 rounded-xl shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 dark:text-white text-sm">שנת ייסוד</h4>
+                                <p
