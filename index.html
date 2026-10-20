@@ -377,7 +377,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
             <p class="text-sm font-medium text-slate-300">MACK Warranties - סוכן מורשה עצמאי רשמי</p>
             <p class="text-xs max-w-2xl mx-auto leading-relaxed text-slate-500">
-                הבהרה משפטית: אתר זה מופעל ומנוהל על ידי סוכן מורשה רשמי עצמאי למכירת תעודות שירות והרחבות אחריות של חברת MACK Worldwide Warranties אתר זה אינו אתר התאגיד הרשמי העולמי (MACKCAM.com) אלא פלטפורמת הפצה מורשית המשרתת את קהל הלקוחות בישראל ובחו"ל.
+                הבהרה משפטית: אתר זה מופעל ומנוהל על ידי סוכן מורשה רשמי עצמאי למכירת תעודות שירות והרחבות אחריות של חברת MACK Worldwide Warranties. אתר זה אינו אתר התאגיד הרשמי העולמי (<a href="https://www.mackcam.com" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">mackcam.com</a>) אלא פלטפורמת הפצה מורשית המשרתת את קהל הלקוחות בישראל ובחו"ל.
             </p>
             <div class="pt-6 border-t border-slate-800 text-xs text-slate-600">
                 &copy; 2026 כל הזכויות שמורות לסוכן מורשה MACK Warranties
@@ -762,8 +762,7 @@
             } catch (submissionErr) {
                 console.error('Submission Error:', submissionErr);
                 formFeedback.className = "p-4 rounded-xl text-sm font-medium text-center bg-red-100 text-red-800 dark:bg-red-950/50 dark:text-red-400 block";
-                // הודעת השגיאה המעודכנת הכוללת קישור לחיץ לשליחת אימייל ישיר
-                formFeedback.innerHTML = `אירעה שגיאה בשליחת הנתונים. אנא נסה שנית או שלח לנו מייל ישיר לכתובת: <a href="mailto:MackCamDealer@gmail.com" class="underline font-bold text-blue-600 dark:text-blue-400">MackCamDealer@gmail.com</a>`;
+                formFeedback.innerHTML = `אירעה שגיאה בשליחת הנתונים. אנא נסה שנית או שלח לנו מייל לכתובת: <a href="mailto:MackCamDealer@gmail.com" class="underline font-bold text-blue-600 dark:text-blue-400">MackCamDealer@gmail.com</a>`;
             } finally {
                 submitBtn.disabled = false;
                 submitBtn.textContent = originalBtnText;
